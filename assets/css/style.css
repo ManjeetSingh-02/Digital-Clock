@@ -1,0 +1,153 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.container div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.container div p {
+    font-size: 2.5rem;
+}
+
+.container div button {
+    border: none;
+    border-bottom: 2px solid grey;
+    padding: 10px;
+    font-size: 2rem;
+    background: none;
+    cursor: pointer;
+}
+
+.container h2 {
+    font-size: 4.5rem;
+}
+
+ul {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    list-style-type: none;
+    padding: 20px;
+    border: 5px solid grey;
+    border-radius: 5px;
+}
+
+ul li {
+    font-size: 3.5rem;
+}
+
+.light {
+    background-color: white;
+    color: black;
+    .container div a button {
+        color: black;
+    }
+}
+
+.dark {
+    background-color: black;
+    color: white;
+    .container div a button {
+        color: white;
+    }
+}
+
+@media screen and (max-width: 1000px) {
+
+    .container div p {
+        font-size: 2rem;
+    }
+
+    .container div button,
+    a {
+        font-size: 2rem;
+    }
+
+    .container h2 {
+        font-size: 3.5rem;
+    }
+
+    ul li {
+        font-size: 2.5rem;
+    }
+}
+
+@media screen and (max-width: 750px) {
+    .container div p {
+        font-size: 1.5rem;
+    }
+
+    .container div button,
+    a {
+        font-size: 1.5rem;
+    }
+
+    .container h2 {
+        font-size: 3rem;
+    }
+
+    ul li {
+        font-size: 2rem;
+    }
+}
+
+@media screen and (max-width: 650px) {
+    .container div p {
+        font-size: 1rem;
+    }
+
+    .container div button,
+    a {
+        font-size: 1rem;
+    }
+
+    .container h2 {
+        font-size: 2.5rem;
+    }
+
+    ul li {
+        font-size: 1rem;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .container div p {
+        font-size: 0.5rem;
+    }
+
+    .container div button,
+    a {
+        font-size: 0.5rem;
+    }
+
+    .container h2 {
+        font-size: 1.25rem;
+    }
+
+    ul li {
+        font-size: 0.5rem;
+    }
+}
